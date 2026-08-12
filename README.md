@@ -49,4 +49,3 @@ Em transição de carreira para a área de desenvolvimento de software.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/laura-santosh/)
 
 
-[![Demo Online](https://img.shields.io/badge/Demo-Acessar_Projeto-brightgreen?style=flat&logo=githubpages&logoColor=white)](https:/laurahelena93.github.io/Cadastro_Dados_PHP)
