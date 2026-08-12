@@ -14,7 +14,8 @@ echo "<div class='resultado'>";
     echo "<p>Sua idade é: $idade anos</p>";
     echo "<p>Atualmente sua profissão é: $profissao </p>"; 
     echo "<p>Salário pretendido: R$$salario </p>";
-    echo "<p>Possui experiências em: $experiencia </p>";
+    echo "<p>Possui experiências em: $experiencia </p><br>";
+    echo "<a href='cadastro.html' class='btn-voltar'>Voltar ao Formulário</a>";
     echo "</div>";
 
 ?> 
@@ -53,6 +54,20 @@ echo "<div class='resultado'>";
     .resultado h2 {
         color: rgb(46, 62, 82);
         text-align: center;
+    }
+    .btn-voltar { /*estiliza o botão de voltar ao formulário*/
+        display: inline-block; /* faz com que o botão seja exibido como um bloco em linha */
+        padding: 10px 30px;
+        margin-left: 150px;
+        background-color: rgb(46, 62, 82); /* Ou a cor do seu projeto */
+        color: #ffffff;
+        text-decoration: none; /* remove o sublinhado do link */
+        border-radius: 5px;
+        font-weight: bold; /*deixa texto em negrito*/
+    }
+
+    .btn-voltar:hover { /*efeito que muda a cor do botão quando o mouse passa por cima*/
+        background-color: rgb(109, 73, 44);
     }
     
 </style>
