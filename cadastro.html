@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible"content="ie=edge"> 
+<title>Cadastro de Dados</title> 
+<style>
+    body { /* estiliza o corpo do HTML*/
+        background-color: #c9d6b9;
+        padding: 10px;
+        margin: 10px;
+
+    }
+    #formulario { /* estiliza o formulário do HTML*/
+        margin-top: 80px; /* espaço do topo até o formulário*/
+        margin-bottom: 20px;
+        margin-right: 450px;
+        margin-left: 450px; /* margem a esquerda*/
+        border-radius: 10px; /* borda arredondada*/
+        background-color: #f2f2f2;
+        padding: 2px;
+    }
+    #enviar { /* estiliza o botão enviar do formulário*/
+        background-color: #fbfcfae8;
+        color: white;
+        border: none;
+        padding: 10px 150px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    #formulario input { /* estiliza a entrada de dados do formalário*/
+        font-size: 18px;
+        color: rgb(25, 55, 94);
+        width: 350px; /* largura*/
+        border-radius: 10px;
+        border-style: hidden;
+        margin: 5px;
+        margin-left: 30px;
+        margin-right: 10px;
+        padding-bottom: 9px;
+        text-align-last: left; /* alinhamento do texto a esquerda*/
+
+    }
+    
+    #formulario textarea { /* estiliza a caixa de texto maior*/
+    
+        width: 350px;
+        border-radius: 5px;
+        border-style: hidden;
+        margin: 8px;
+        margin-left: 30px;
+        font-size: 18px;
+
+
+    }
+    #formulario label { /* estiliza cor, alinhamento, espaçamento das palavras dentro do formulário */
+        color: rgb(25, 55, 94);
+        width: 100%;
+        padding: 30px;
+        margin: 8px;
+        margin-left: 5px;
+        
+        text-align: center;
+        font-size: 20px;
+        
+    }
+   
+  
+</style>
+</head> 
+<body> 
+    <div id="formulario"> <!--ID para facilitar a estilização com css-->
+        <form method="post" action="processaCadastro.php"><br>  <!--criação de um formulário, acionando o PHP para receber as informações e guardar nas variaveis-->
+            <label for="nome">Nome completo:</label><br>
+            <input name="nome_completo"type="text"id="nome_completo"placeholder = "Digite seu Nome completo"> <!--Input nada mais é que a entrada de dados no formulario-->
+            <br>
+            <label for="idade">Idade:</label><br> <!--label é uma funçaõ para identificar  e descrever um campo do formulário-->
+            <input name="idade"type="number"id="Idade"placeholder = "Digite sua Idade"> 
+            <br>
+            <label for="profissao">Profissão:</label><br>
+            <input name="profissao"type="text"id="profissao"placeholder = "Digite sua Profissão"> 
+            <br>
+            <label for="salario">Salário pretendido:</label><br>
+            <input name="salario"type="number_format()"id="salario"placeholder = "Digite o Salário pretendido"> 
+            <br>
+            <label for="experiencias">Experiências anteriores:</label>
+            <br>
+            <textarea name="experiencias_anteriores"type="textarea"id="experiencias_anteriores"rows="6" cols="50"></textarea> <!--Textarea é o responsável pela caixa de texto maior-->
+            <br><br>
+            <input name="Enviar"type="submit"id="enviar"value="Enviar"><br> 
+            
+        </form> 
+    </div>
+
+</body> 
+</html>
